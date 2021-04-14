@@ -1,0 +1,48 @@
+@import '../variables.scss';
+@import '../media-queries.scss';
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $darkest;
+  color: $font;
+  overflow: hidden;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  color: $primary;
+}
+code {
+  margin-top: 1rem;
+  color: #88715a;
+  display: block;
+}
+
+// Custom Scrollbar
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $darker;
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $dark;
+}

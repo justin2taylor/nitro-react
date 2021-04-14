@@ -4,9 +4,6 @@ import logo from '../../assets/nitro-react-logo.svg';
 
 import { AppContext } from '../context/AppContext';
 
-//@ts-ignore
-import styled from 'styled-components';
-
 import { FaReact } from 'react-icons/fa';
 
 import './main.scss';
@@ -21,7 +18,6 @@ export const Main = () => {
   return (
     <>
       <div className="app--container">
-        {/* Custom Element Example */}
         <img className="app--logo" src={logo} alt="" />
         <code>{`while ( alive ) { haveCoffee ? keepCoding() : drinkCoffee(); }`}</code>
         <div className="app--grid">
@@ -36,11 +32,6 @@ export const Main = () => {
           <FaReact />
           {`React Test ${state.clicks}`}
         </button>
-        <div>
-          <code>
-            site location:<span className={`app--value--true`}> {(state.isLocalSite && 'local') || 'remote'}</span>
-          </code>
-        </div>
       </div>
     </>
   );
