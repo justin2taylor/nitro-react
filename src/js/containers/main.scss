@@ -1,0 +1,145 @@
+@import '../variables.scss';
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $darkest;
+  color: $font;
+  overflow: hidden;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  color: $primary;
+}
+code {
+  margin-top: 1rem;
+  color: #88715a;
+  display: block;
+}
+.app--value--true {
+  color: $changed;
+}
+.app--value--false {
+  color: $secondary;
+}
+// button {
+//   margin-right: 1rem;
+//   padding: 0.2rem 1rem 0.2rem 1rem;
+//   background-color: transparent;
+//   color: $font;
+//   border-radius: 20px;
+//   border: 1px solid grey;
+//   outline: none;
+// }
+// button:hover:enabled {
+//   color: $dark;
+//   background-color: $font;
+// }
+// button:active:enabled {
+//   background-color: $primary;
+// }
+
+// button:disabled {
+//   color: grey;
+// }
+
+.app--logo {
+  height: 200px;
+  display: block;
+  margin: 1rem;
+  padding-top: 1rem;
+}
+.app--container {
+  padding: auto;
+  margin: 1rem;
+}
+.app--grid {
+  margin: 2rem 0 2rem 0;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  .app--grid--a {
+    background-color: $primary;
+  }
+  .app--grid--b {
+    background-color: $secondary;
+  }
+  .app--grid--c {
+    background-color: $active;
+  }
+  .app--grid--d {
+    background-color: $changed;
+  }
+  .app--grid--e {
+    background-color: $warning;
+  }
+  .app--grid--f {
+    background-color: $error;
+  }
+  div {
+    height: 10px;
+    width: 100%;
+    border-radius: 0px;
+    transition: all 0.5s ease;
+  }
+  div:hover {
+    height: 200%;
+  }
+}
+
+.special-button {
+  margin-right: 1rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  background-color: transparent;
+  color: grey;
+  border-radius: 20px;
+  border: 1px solid grey;
+  outline: none;
+
+  :hover:enabled {
+    color: lightgrey;
+    background-color: transparent;
+  }
+  :active:enabled {
+    background-color: lightblue;
+  }
+
+  :disabled {
+    color: grey;
+  }
+
+  svg {
+    // margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    position: relative;
+    top: 2px;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $darker;
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $dark;
+}
